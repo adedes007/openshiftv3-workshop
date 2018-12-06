@@ -276,7 +276,7 @@ deploymentconfig.apps.openshift.io/myhttpdapp scaled
 ----
 
 Alternately, you can go to project overview page and click on
-image:scale_down.jpg[width="10%"] twice to remove 2 running pods.
+image:images/scale_down.jpg[width="10%"] twice to remove 2 running pods.
 
 Congratulations!! In this exercise you have learned about scaling and
 how to scale up/down your application on OpenShift!
