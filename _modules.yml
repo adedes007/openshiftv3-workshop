@@ -5,13 +5,13 @@ config:
       value: openshift
     - name: GIT_SERVER_URL
       desc: Git server url
-      value: http://gogs-lab.apps.harvard-5d8e.openshiftworkshop.com/
+      value: http://gogs-infra.apps.harvard-4433.openshiftworkshop.com/
     - name: CONSOLE_ADDRESS
       desc: HTTP address of the OpenShift console
-      value: https://master.harvard-5d8e.openshiftworkshop.com/console/catalog
+      value: https://master.harvard-4433.openshiftworkshop.com/console/catalog
     - name: APPS_ADDRESS
       desc: HTTP address suffix of apps deployed on OpenShift
-      value: apps.harvard-5d8e.openshiftworkshop.com
+      value: apps.harvard-4433.openshiftworkshop.com
     - name: GET_STARTED_CLI_URL
       desc: URL to documentation to configure CLI
       value: https://docs.openshift.com/container-platform/latest/cli_reference/get_started_cli.html
