@@ -188,7 +188,7 @@ sure to name the application as `green` this time. Notice we built it a slightly
 Using --image-stream and --code. This way and the previous are equivalent. 
 
 ----
-oc new-app --image-stream=php --code={{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git --env COLOR=green --name=green
+oc new-app --image-stream=php --code={{GIT_SERVER_URL}}RedHatWorkshops/bluegreen.git --env COLOR=green --name=green
 
 --> Found image b3deb14 (2 weeks old) in image stream "openshift/php" under tag "7.1" for "php"
 
