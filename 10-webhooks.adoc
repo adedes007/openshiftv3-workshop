@@ -37,7 +37,7 @@ IMPORTANT: Please replace *userxx* with the username assigned to you in
 the commands below.
 
 ----
-$ oc new-app --image-stream=php --code={{GIT_SERVER_URL}}/<your_git_repo_username>/bluegreen.git --name=scm-web-hooks
+$ oc new-app --image-stream=php --code={{GIT_SERVER_URL}}<your_git_repo_username>/bluegreen.git --name=scm-web-hooks
 ----
 
 *Step 3: Look at some of the created resources*
