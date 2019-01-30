@@ -29,7 +29,7 @@ $ oc new-project scm-web-hooks-userxx --display-name="Test WebHooks"
 
 . Login into GitLab {{GIT_SERVER_URL}}.
 . Create your user account.
-. Fork this repository ({{GIT_SERVER_URL}}adminuser/bluegreen.git) into your account by clicking in the *Fork* button right at the bottom of the repository name.
+. Fork this repository ({{GIT_SERVER_URL}}RedHatWorkshops/bluegreen.git) into your account by clicking in the *Fork* button right at the bottom of the repository name.
 
 NOTE: We will use the forked repository.
 
