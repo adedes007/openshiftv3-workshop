@@ -61,7 +61,7 @@ in practice you would use a different branch for each version of the
 code. (E.g. v1 branch and v2 branch)
 
 ----
-$ oc new-app php~{{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git --env COLOR=blue --name=blue
+$ oc new-app php~{{GIT_SERVER_URL}}RedHatWorkshops/bluegreen.git --env COLOR=blue --name=blue
 
 --> Found image b3deb14 (2 weeks old) in image stream "openshift/php" under tag "7.1" for "php"
 
