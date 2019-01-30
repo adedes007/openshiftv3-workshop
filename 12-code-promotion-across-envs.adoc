@@ -105,8 +105,8 @@ Dont forget to update below with your username
 
 ----
 $ oc tag \
-development-UserName/welcome-php:latest \
-development-UserName/welcome-php:promote-qa
+development-userxx/welcome-php:latest \
+development-userxx/welcome-php:promote-qa
 
 Tag welcome-php:promote-qa set to development-user1/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c.
 
