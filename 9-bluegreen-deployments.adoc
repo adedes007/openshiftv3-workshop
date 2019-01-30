@@ -54,14 +54,14 @@ php
 *Step 3: Create an application*
 
 We will be using a sample application that displays a blue or green
-rectangle. The sample app can be browsed at {{GIT_SERVER_URL}}adminuser/bluegreen.git
+rectangle. The sample app can be browsed at {{GIT_SERVER_URL}}RedHatWorkshops/bluegreen.git
 
 We will be using an env var in order to change the color of the box, but
 in practice you would use a different branch for each version of the
 code. (E.g. v1 branch and v2 branch)
 
 ----
-$ oc new-app php~{{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git/RedHatWorkshops/bluegreen --env COLOR=blue --name=blue
+$ oc new-app php~{{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git --env COLOR=blue --name=blue
 
 --> Found image b3deb14 (2 weeks old) in image stream "openshift/php" under tag "7.1" for "php"
 
@@ -188,7 +188,7 @@ sure to name the application as `green` this time. Notice we built it a slightly
 Using --image-stream and --code. This way and the previous are equivalent. 
 
 ----
-oc new-app --image-stream=php --code={{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git/RedHatWorkshops/bluegreen.git --env COLOR=green --name=green
+oc new-app --image-stream=php --code={{GIT_SERVER_URL}}/RedHatWorkshops/bluegreen.git --env COLOR=green --name=green
 
 --> Found image b3deb14 (2 weeks old) in image stream "openshift/php" under tag "7.1" for "php"
 
