@@ -58,7 +58,7 @@ configuration file that is then used for subsequent commands.
 To login to a remote server use:
 
 ----
-$ oc login https://master.harvard-4433.openshiftworkshop.com
+$ oc login https://master.toronto-e8e9.openshiftworkshop.com
 ----
 
 NOTE: Username and password will be provided by your instructor.
