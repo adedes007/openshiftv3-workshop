@@ -63,7 +63,7 @@ short form for `imagestream`.
 ----
 oc get is
 NAME          DOCKER REPO                                                      TAGS      UPDATED
-welcome-php   docker-registry.default.svc:5000/development-user1/welcome-php   latest    About a minute ago
+welcome-php   docker-registry.default.svc:5000/development-userxx/welcome-php   latest    About a minute ago
 ----
 
 Now describe this image stream to get the full image id:
@@ -72,11 +72,11 @@ Now describe this image stream to get the full image id:
 $ oc describe is welcome-php
 
 Name:			welcome-php
-Namespace:		development-user1
+Namespace:		development-userxx
 Created:		2 minutes ago
 Labels:			app=welcome-php
 Annotations:		openshift.io/generated-by=OpenShiftNewApp
-Docker Pull Spec:	docker-registry.default.svc:5000/development-user1/welcome-php
+Docker Pull Spec:	docker-registry.default.svc:5000/development-userxx/welcome-php
 Image Lookup:		local=false
 Unique Images:		1
 Tags:			1
@@ -84,12 +84,12 @@ Tags:			1
 latest
   no spec tag
 
-  * docker-registry.default.svc:5000/development-user1/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
+  * docker-registry.default.svc:5000/development-userxx/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
       About a minute ago
 ----
 
 In this case, the full image Id is
-`docker-registry.default.svc:5000/development-user1/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c`
+`docker-registry.default.svc:5000/development-userxx/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c`
 
 Now let us assume that this docker image is good and is ready to promote
 to QA. Let us tag this docker image using the `oc tag` command.
@@ -113,11 +113,11 @@ Tag welcome-php:promote-qa set to development-user1/welcome-php@sha256:d6d554813
 $ oc describe is welcome-php
 
 Name:			welcome-php
-Namespace:		development-user1
+Namespace:		development-userxx
 Created:		5 minutes ago
 Labels:			app=welcome-php
 Annotations:		openshift.io/generated-by=OpenShiftNewApp
-Docker Pull Spec:	docker-registry.default.svc:5000/development-user1/welcome-php
+Docker Pull Spec:	docker-registry.default.svc:5000/development-userxx/welcome-php
 Image Lookup:		local=false
 Unique Images:		1
 Tags:			2
@@ -125,13 +125,13 @@ Tags:			2
 latest
   no spec tag
 
-  * docker-registry.default.svc:5000/development-user1/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
+  * docker-registry.default.svc:5000/development-userxx/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
       5 minutes ago
 
 promote-qa
   tagged from welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
 
-  * docker-registry.default.svc:5000/development-user1/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
+  * docker-registry.default.svc:5000/development-userxx/welcome-php@sha256:d6d55481339b9a929222827f132604438398c2ee085a86d02011602c9a96678c
       27 seconds ago
 ----
 
